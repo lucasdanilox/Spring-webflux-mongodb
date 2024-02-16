@@ -15,9 +15,10 @@ import com.devsuperior.workshopmongo.services.exceptioons.ResourceNotFoundExcept
 @Service
 public class UserService {
 
-	@Autowired
-	private UserRepository repository;
+    @Autowired
+    private UserRepository repository;
 
+    /*
 	@Transactional(readOnly = true)
 	public List<UserDTO> findAll() {
 		List<UserDTO> result = repository.findAll().stream().map(x -> new UserDTO(x)).toList();
@@ -65,4 +66,7 @@ public class UserService {
 		entity.setName(dto.getName());
 		entity.setEmail(dto.getEmail());
 	}
+
+     */
+
 }
